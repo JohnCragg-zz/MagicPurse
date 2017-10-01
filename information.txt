@@ -1,0 +1,40 @@
+//
+//#################################################
+//#################################################
+//#     RULES FOR PRE DECIMALISATION
+//#       BRITISH MONEY
+//#
+//#       HALF CROWN
+//#       FLORIN
+//#       SHILLING
+//#       SIXPENCE
+//#       THREEPENCE
+//#       PENNY
+//#       HALF PENNY
+//#
+//#################################################
+//#
+//#       HALFPENNY = 0.5d
+//#       PENNY = 1d = 2 HALFPENNY
+//#       THREEPENCE = 3d = 3 PENNY = 6 HALFPENNY
+//#       SIXPENCE = 6d = 2THREEPENCE = 6 PENNY = 12 HALFPENNY
+//#       SHILLING = 1/- = 2 SIXPENCE = 4 THREEPENCE = 12 PENNY = 24 HALFPENNY
+//#       FLORIN = 2/- = 2 SHILLING = 4 SIXPENCE = 8 THREEPENCE = 24 PENNY = 48 HALFPENNY
+//#       HALF CROWN = 2/6 = 2 SHILLING + SIXPENCE = ..
+//#
+//#################################################
+//#       RULES FOR SLASHES AND DASHES
+//#
+//#       /  = SHILLINGS AND PENCE
+//#       // = POUNDS SHILLINGS AND PENCE
+//#       -  = NO SHILLINGS OR PENCE
+//#
+//#################################################
+//#       INPUTS
+//#       10/-   = 10 Shillings
+//#       1/-/-  =
+//#       5/-/-  =
+//#       10/-/- =
+//#
+//#################################################
+//#################################################
