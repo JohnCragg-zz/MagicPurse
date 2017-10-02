@@ -4,7 +4,7 @@
 		module="magicpurse-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171001152036"
+		publication="20171002211902"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

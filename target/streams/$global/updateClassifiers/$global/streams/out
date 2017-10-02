@@ -5,7 +5,7 @@
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for default#magicpurse$sources;0.1 [compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [compile->default]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.3 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.3 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, master(*), compile, runtime(*), runtime, optional, optional(default), compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.3
 [debug] 	found org.scala-lang#scala-library;2.12.3 in sbt-chain
 [debug] 	[2.12.3] org.scala-lang#scala-library;2.12.3
@@ -63,6 +63,7 @@
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [compile->master]
+[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [compile->master(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [compile->runtime(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [compile->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [compile->master(compile)]
@@ -80,7 +81,7 @@
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [runtime->master]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [runtime->master]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [test->compile]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.3 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.3 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[master(*), compile, runtime(*), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.3
 [debug] 	found org.scala-lang#scala-reflect;2.12.3 in sbt-chain
 [debug] 	[2.12.3] org.scala-lang#scala-reflect;2.12.3
@@ -110,6 +111,7 @@
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->runtime]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->master]
+[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->master(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->runtime(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->compile]
@@ -282,6 +284,7 @@
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->runtime]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->master]
+[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->master(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->runtime(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test->compile]
@@ -344,6 +347,7 @@
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test-internal->runtime]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test-internal->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test-internal->master]
+[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test-internal->master(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test-internal->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test-internal->runtime(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [test-internal->compile]
@@ -386,21 +390,21 @@
 [debug] == resolving dependencies for default#magicpurse$sources;0.1 [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
 [debug] == resolving dependencies for default#magicpurse$sources;0.1 [scala-tool]
+[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->master(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->runtime(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->compile]
-[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->master(compile)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->runtime]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->compile(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-reflect;2.12.3 [scala-tool->master]
-[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.6 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->master(*)]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.6 {scala-tool=[master(*), compile, runtime(*), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.12;1.0.6
 [debug] 	found org.scala-lang.modules#scala-xml_2.12;1.0.6 in sbt-chain
+[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->runtime(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile]
-[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->master(compile)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->runtime]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang.modules#scala-xml_2.12;1.0.6 [scala-tool->compile(*)]
@@ -409,10 +413,10 @@
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->runtime]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->master]
+[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->master(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->runtime(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->compile]
-[debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->master(compile)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->runtime]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-library;2.12.3 [scala-tool->optional]
@@ -432,50 +436,88 @@
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->optional]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->optional(default)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->org.scala-lang#scala-compiler;2.12.3 [scala-tool->master]
-[debug] == resolving dependencies default#magicpurse$sources;0.1->jline#jline;2.14.4 [scala-tool->compile]
-[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.14.4 {scala-tool=[compile, master(compile), compile(*), master]}
+[debug] == resolving dependencies default#magicpurse$sources;0.1->jline#jline;2.14.4 [scala-tool->master(*)]
+[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.14.4 {scala-tool=[master(*), compile, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: jline#jline;2.14.4
 [debug] 	found jline#jline;2.14.4 in sbt-chain
-[debug] == resolving dependencies default#magicpurse$sources;0.1->jline#jline;2.14.4 [scala-tool->master(compile)]
+[debug] == resolving dependencies default#magicpurse$sources;0.1->jline#jline;2.14.4 [scala-tool->compile]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->jline#jline;2.14.4 [scala-tool->compile(*)]
 [debug] == resolving dependencies default#magicpurse$sources;0.1->jline#jline;2.14.4 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.3!scala-library.jar(src)
-[debug] 	[NOT REQUIRED] jline#jline;2.14.4!jline.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.3!scala-reflect.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.3!scala-compiler.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\Cragg\.ivy2
-[debug] including url: jar:file:/C:/Users/Cragg/.sbt/boot/scala-2.12.3/org.scala-sbt/sbt/1.0.2/ivy-2.3.0-sbt-a3314352b638afbf0dca19f127e8263ed6f898bd.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.1!scalatest_2.12.jar(src)
-[debug] no default cache defined: set to C:\Users\Cragg\.ivy2\cache
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(src)
-[debug] including url: jar:file:/C:/Users/Cragg/.sbt/boot/scala-2.12.3/org.scala-sbt/sbt/1.0.2/ivy-2.3.0-sbt-a3314352b638afbf0dca19f127e8263ed6f898bd.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/Cragg/.sbt/boot/scala-2.12.3/org.scala-sbt/sbt/1.0.2/ivy-2.3.0-sbt-a3314352b638afbf0dca19f127e8263ed6f898bd.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Cragg/.sbt/boot/scala-2.12.3/org.scala-sbt/sbt/1.0.2/ivy-2.3.0-sbt-a3314352b638afbf0dca19f127e8263ed6f898bd.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Cragg/.sbt/boot/scala-2.12.3/org.scala-sbt/sbt/1.0.2/ivy-2.3.0-sbt-a3314352b638afbf0dca19f127e8263ed6f898bd.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (231ms)
-[debug] 	default cache: C:\Users\Cragg\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] :: resolution report :: resolve 1221ms :: artifacts dl 492ms
-[debug] 	report for default#magicpurse$sources;0.1 compile produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-compile.xml
-[debug] 	report for default#magicpurse$sources;0.1 runtime produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-runtime.xml
-[debug] 	report for default#magicpurse$sources;0.1 test produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-test.xml
-[debug] 	report for default#magicpurse$sources;0.1 provided produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-provided.xml
-[debug] 	report for default#magicpurse$sources;0.1 optional produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-optional.xml
-[debug] 	report for default#magicpurse$sources;0.1 compile-internal produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-compile-internal.xml
-[debug] 	report for default#magicpurse$sources;0.1 runtime-internal produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-runtime-internal.xml
-[debug] 	report for default#magicpurse$sources;0.1 test-internal produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-test-internal.xml
-[debug] 	report for default#magicpurse$sources;0.1 plugin produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-plugin.xml
-[debug] 	report for default#magicpurse$sources;0.1 pom produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-pom.xml
-[debug] 	report for default#magicpurse$sources;0.1 scala-tool produced in C:\working\dev\MagicPurse\target\scala-2.12\resolution-cache\reports\default-magicpurse$sources-scala-tool.xml
-[debug] 	resolve done (1221ms resolve - 492ms download)
+[debug] 		tried /home/john/.ivy2/local/org.scala-lang/scala-library//2.12.3/srcs/scala-library-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3-sources.jar
+[debug] 		tried /home/john/.ivy2/local/org.scala-lang.modules/scala-xml_2.12//1.0.5/srcs/scala-xml_2.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5-sources.jar
+[debug] 		tried /home/john/.ivy2/local/org.scalatest/scalatest_2.12//3.0.1/srcs/scalatest_2.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1-sources.jar
+[debug] 		tried /home/john/.ivy2/local/org.scala-lang.modules/scala-parser-combinators_2.12//1.0.4/srcs/scala-parser-combinators_2.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(src) (387ms)
+[debug] 		tried /home/john/.ivy2/local/org.scala-lang/scala-reflect//2.12.3/srcs/scala-reflect-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(src) (724ms)
+[debug] 		tried /home/john/.ivy2/local/org.scalactic/scalactic_2.12//3.0.1/srcs/scalactic_2.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1-sources.jar
+[info] 	[SUCCESSFUL ] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.jar(src) (1116ms)
+[debug] 		tried /home/john/.ivy2/local/org.scala-lang.modules/scala-xml_2.12//1.0.6/srcs/scala-xml_2.12-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.3!scala-reflect.jar(src) (1689ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src) (539ms)
+[debug] 		tried /home/john/.ivy2/local/org.scala-lang/scala-compiler//2.12.3/srcs/scala-compiler-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1-sources.jar
+[info] 	[SUCCESSFUL ] org.scalatest#scalatest_2.12;3.0.1!scalatest_2.12.jar(src) (2533ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.3!scala-library.jar(src) (2732ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.3/scala-compiler-2.12.3-sources.jar
+[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.3!scala-compiler.jar(src) (2150ms)
+[debug] 		tried /home/john/.ivy2/local/jline/jline//2.14.4/srcs/jline-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/jline/jline/2.14.4/jline-2.14.4-sources.jar
+[info] downloading https://repo1.maven.org/maven2/jline/jline/2.14.4/jline-2.14.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/jline/jline/2.14.4/jline-2.14.4-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/jline/jline/2.14.4/jline-2.14.4-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/jline/jline/2.14.4/jline-2.14.4-sources.jar
+[info] 	[SUCCESSFUL ] jline#jline;2.14.4!jline.jar(src) (291ms)
+[debug] :: resolution report :: resolve 67ms :: artifacts dl 4836ms
+[debug] 	report for default#magicpurse$sources;0.1 compile produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-compile.xml
+[debug] 	report for default#magicpurse$sources;0.1 runtime produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-runtime.xml
+[debug] 	report for default#magicpurse$sources;0.1 test produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-test.xml
+[debug] 	report for default#magicpurse$sources;0.1 provided produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-provided.xml
+[debug] 	report for default#magicpurse$sources;0.1 optional produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-optional.xml
+[debug] 	report for default#magicpurse$sources;0.1 compile-internal produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-compile-internal.xml
+[debug] 	report for default#magicpurse$sources;0.1 runtime-internal produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-runtime-internal.xml
+[debug] 	report for default#magicpurse$sources;0.1 test-internal produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-test-internal.xml
+[debug] 	report for default#magicpurse$sources;0.1 plugin produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-plugin.xml
+[debug] 	report for default#magicpurse$sources;0.1 pom produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-pom.xml
+[debug] 	report for default#magicpurse$sources;0.1 scala-tool produced in /home/john/working/MagicPurse/target/scala-2.12/resolution-cache/reports/default-magicpurse$sources-scala-tool.xml
+[debug] 	resolve done (67ms resolve - 4836ms download)
