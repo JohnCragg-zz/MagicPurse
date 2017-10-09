@@ -25,8 +25,8 @@ class MagicPurse(input: String) {
 
   def combinations(purse : Map[Coin , Int], acc: Int = 0) : Int = purse match {
       case p if p(HalfPenny) == inHalfPennies => if (inHalfPennies % 2 == 0) acc + 1 else acc
-      case p if purse.values.sum % 2 == 0 => combinations(decomposeHighestCoin(purse), acc + 1)
-      case _ => combinations(decomposeHighestCoin(purse), acc)
+      case p if purse.values.sum % 2 == 0 => combinations(decomposeLowest(purse), acc + 1)
+      case _ => combinations(decomposeLowest(purse), acc)
     }
 
 
@@ -41,8 +41,19 @@ class MagicPurse(input: String) {
     case n if n > 0 => purse ++ Map(HalfCrown -> (n - 1)) ++ Map(Florin -> (purse(Florin)+1)) ++ Map(Sixpence -> (purse(Sixpence) + 1 ))
   }
 
-  def decomposeHighestCoin(purse: Map[Coin, Int]) = purse match {
-    case p if p(Pound) > 0 => splitCoin(purse, Pound, HalfCrown, 8 )
+  def decomposeLowest(purse: Map[Coin, Int]) = purse match {
+    case p if p(Penny) > 0 => splitCoin(purse, Penny, HalfPenny, 2)
+    case p if p(Threepence) > 0 => splitCoin(purse, Threepence, Penny, 3 )
+    case p if p(Sixpence) > 0 => splitCoin(purse, Sixpence, Threepence, 2 )
+    case p if p(Shilling) > 0 => splitCoin(purse, Shilling, Sixpence, 2 )
+    case p if p(Florin) > 0 => splitCoin(purse, Florin, Shilling, 2 )
+    case p if p(HalfCrown) > 0 => splitHalfCrown(purse)
+    case p if p(Pound) > 0 => splitCoin(purse, Pound, HalfCrown, 8)
+    case _ => decomposeHighest(purse)
+  }
+
+  def decomposeHighest(purse: Map[Coin, Int]) = purse match {
+    case p if p(Pound) > 0 => splitCoin(purse, Pound, HalfCrown, 8)
     case p if p(HalfCrown) > 0 => splitHalfCrown(purse)
     case p if p(Florin) > 0 => splitCoin(purse, Florin, Shilling, 2 )
     case p if p(Shilling) > 0 => splitCoin(purse, Shilling, Sixpence, 2 )
@@ -52,3 +63,20 @@ class MagicPurse(input: String) {
   }
 
 }
+
+//val target = 4
+//
+//val amountsInHalfpennies = List(1, 2)
+//
+//val xs = for {
+//  coin <- amountsInHalfpennies
+//  maxNumberOfCoins <- 0 to (target / coin)
+//} yield (coin, maxNumberOfCoins, coin * maxNumberOfCoins)
+//
+//val ys = xs.groupBy(_._1).map { case (coin, values) => (coin, values.map(v => (v._2, v._3))) }
+//
+//for {
+//  (coin1, numbersAndTotals1) <- ys.toList
+//  (coin2, numbersAndTotals2) <- ys
+//} yield (coin1, coin2)
+
